@@ -19,9 +19,6 @@ public class StationeryShop2 {
         Scanner scanner = new Scanner(System.in);
 
         // first we need to determine the type of materials
-        System.out.println("how many materials do you want: ");
-        int materialDiversity = scanner.nextInt();
-
         System.out.println("Please select your material \n"
                 + "1 - Pencil\n"
                 + "2 - Eraser\n"
@@ -30,6 +27,10 @@ public class StationeryShop2 {
                 + "5 - Pencil Case\n"
                 + "6 - Sharpener\n"
                 + "7 - Post-it\n");
+        
+        // we decide how many goods to buy
+        System.out.println("how many materials do you want: ");
+        int materialDiversity = scanner.nextInt();
 
         // keep material in a array
         String[] material = new String[materialDiversity];
