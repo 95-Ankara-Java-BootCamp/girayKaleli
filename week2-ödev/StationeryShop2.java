@@ -31,7 +31,7 @@ public class StationeryShop2 {
                 + "6 - Sharpener\n"
                 + "7 - Post-it\n");
 
-        // keep material in a list
+        // keep material in a array
         String[] material = new String[materialDiversity];
         int pencil = 0, eraser = 0, notebook = 0, book = 0, pencilCase = 0, sharpener = 0, postIt = 0;
 
