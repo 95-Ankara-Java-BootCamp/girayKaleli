@@ -1,3 +1,12 @@
+/**
+ *
+ * @author Guray Kaleli,2021
+ *
+ * @return calculate transactions in the stationery shop
+ *
+ *
+ **/
+
 package com.week2.ödev;
 
 import java.util.Scanner;
@@ -25,11 +34,6 @@ public class StationeryShop2 {
         // keep material in a list
         String[] material = new String[materialDiversity];
         int pencil = 0, eraser = 0, notebook = 0, book = 0, pencilCase = 0, sharpener = 0, postIt = 0;
-        //HashMap<Integer,String> yourBasket = new HashMap<>();
-
-        //boolean condition = true;
-
-        // If the condition is true, we continue to receive input from the user with this loop.
 
         for (int i = 0; i <= material.length-1; i++) {
 
