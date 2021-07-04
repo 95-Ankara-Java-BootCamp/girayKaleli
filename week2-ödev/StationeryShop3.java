@@ -24,6 +24,7 @@ public class StationeryShop3 {
 
         // keep material in a list
         HashMap<Integer,String> yourBasket = new HashMap<>();
+        int key = 0;
 
         int pencil = 0, eraser = 0, notebook = 0, book = 0, pencilCase = 0, sharpener = 0, postIt = 0;
 
@@ -36,25 +37,25 @@ public class StationeryShop3 {
             int selectingMaterial = scanner.nextInt();
 
             if (selectingMaterial == 1) {
-                yourBasket.put(1, "Pencil");
+                yourBasket.put(key++, "Pencil");
                 pencil++;
             } else if (selectingMaterial == 2) {
-                yourBasket.put(1, "Eraser");
+                yourBasket.put(key++, "Eraser");
                 eraser++;
             } else if (selectingMaterial == 3) {
-                yourBasket.put(1, "Notebook");
+                yourBasket.put(key++, "Notebook");
                 notebook++;
             } else if (selectingMaterial == 4) {
-                yourBasket.put(1, "Book");
+                yourBasket.put(key++, "Book");
                 book++;
             } else if (selectingMaterial == 5) {
-                yourBasket.put(1, "Pencil Case");
+                yourBasket.put(key++, "Pencil Case");
                 pencilCase++;
             } else if (selectingMaterial == 6) {
-                yourBasket.put(1, "Sharpener");
+                yourBasket.put(key++, "Sharpener");
                 sharpener++;
             } else if (selectingMaterial == 7) {
-                yourBasket.put(1, "Post-It");
+                yourBasket.put(key++, "Post-It");
                 postIt++;
             } else if (selectingMaterial == 0) {
                 System.out.println("Process is over!");
