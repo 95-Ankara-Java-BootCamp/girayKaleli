@@ -14,6 +14,7 @@ public  class FlightReservationSystem implements reservationService{
     private HashMap<Integer, Boolean> seats = new HashMap<>(seatsNumber);
 
     public FlightReservationSystem() {
+
     }
 
     @Override

@@ -10,17 +10,17 @@ public class PegasusReservationSystem  extends FlightReservationSystem{
     public void rezarvasyonAl() {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        FlightReservationSystem flightReservationSystem = new FlightReservationSystem();
+
 
         System.out.println("Please enter seats number : ");
-        flightReservationSystem.setSeatsNumber(scanner.nextInt());
-        flightReservationSystem.setKoltuk(new boolean[flightReservationSystem.getSeatsNumber()]);
-        flightReservationSystem.setBusinessSeat(random.nextInt(10)); //x;
+        setSeatsNumber(scanner.nextInt());
+        setKoltuk(new boolean[getSeatsNumber()]);
+        setBusinessSeat(random.nextInt(10)); //x;
 
 
-        HashMap<Integer, Boolean> seats = new HashMap<>(flightReservationSystem.getSeatsNumber());
+        HashMap<Integer, Boolean> seats = new HashMap<>(getSeatsNumber());
 
-        flightReservationSystem.randomSeatAllocation(flightReservationSystem.getKoltuk(), flightReservationSystem.getSeatsNumber(), seats);
+        randomSeatAllocation(getKoltuk(), getSeatsNumber(), seats);
 
         super.rezarvasyonAl();
     }
